@@ -276,3 +276,7 @@ body{
         width: 0;
     }
 }
+
+.img{
+    border-radius: 50%;
+}
