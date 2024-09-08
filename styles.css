@@ -69,7 +69,7 @@ body{
 }
 
 .about {
-    height: 60vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,6 +107,15 @@ body{
     padding-bottom: 5px;
 }
 
+.about .content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.about .avatar-container{
+    margin-bottom: 50px;
+}
 
 .home-content h1::before{
     content: '';
@@ -311,8 +320,116 @@ body{
 
 }
 
-@keyframes showRight{
-    100%{
-        width: 0;
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .card {
+    background: #081b29;
+    color: #ededed;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    max-height: 200px;
+    transition: max-height 0.5s ease-in-out;
+  }
+
+.card:hover {
+    max-height: 100vh;
+}
+
+.card-header {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+  
+.card h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+  
+.expand-btn {
+    background: #00abf0;
+    color: #081b29;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+  
+.expand-btn:hover {
+    background: #ededed;
+    color: #00abf0;
+}
+  
+.card-content {
+    display: none;
+    padding: 20px;
+}
+
+.card:hover .card-content {
+    display: block;
+}
+  
+  .card-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .back-btn {
+    background: #00abf0;
+    color: #081b29;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .back-btn:hover {
+    background: #ededed;
+    color: #00abf0;
+  }
+  
+  .card {
+    background: linear-gradient(90deg, #04375c, #002230);
+    box-shadow: 20px 20px 60px #050c15, -20px -20px 60px #0c1a25;
+    cursor: pointer;
+    animation: fadeInUp 1s;
+  }
+
+  .card {
+    animation: fadeInUp 1s;
+}
+
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
     }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes showRight{
+        100%{
+            width: 0;
+        }
+  }
+
+ 
+
+.Fade{
+    animation: 1s fadeInUp;
 }
