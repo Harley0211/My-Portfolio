@@ -7,22 +7,38 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #081b29;
     color: #ededed;
 }
 
 .header{
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: linear-gradient(180deg, rgba(8, 27, 41, 0.5), rgba(8, 27, 41, 0.7));
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 1000;
+    backdrop-filter: blur (10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    
+}
+
+.home,
+.about,
+.services,
+.portfolio,
+.contact {
+    padding-top: 100px;
 }
 
 .logo{
@@ -69,10 +85,10 @@ body{
 }
 
 .about {
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 0 10%;
   }
 
@@ -97,8 +113,8 @@ body{
 
 .about .content-inner{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction:column;
+    align-items: right;
 }
 
 .about .content-inner h1{
@@ -114,7 +130,7 @@ body{
 }
 
 .about .avatar-container{
-    margin-bottom: 50px;
+    margin-bottom:   50px;
 }
 
 .home-content h1::before{
@@ -314,7 +330,7 @@ body{
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    display: block;
+    display: block;     
     margin: 0 auto;
     
 
@@ -325,9 +341,10 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-  }
+    overflow: hidden;
+}
   
-  .card {
+.card {
     background: #081b29;
     color: #ededed;
     padding: 20px;
@@ -339,13 +356,14 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow-y: hidden;
+    overflow-y: auto;
     max-height: 200px;
     transition: max-height 0.5s ease-in-out;
-  }
+    position: relative;
+}
 
 .card:hover {
-    max-height: 100vh;
+    max-height: 300px;
 }
 
 .card-header {
@@ -375,41 +393,44 @@ body{
 }
   
 .card-content {
-    display: none;
+    display: block;
     padding: 20px;
+    overflow-y: auto;
+    max-height: 100px;
 }
 
 .card:hover .card-content {
-    display: block;
+    max-height: 200px;
+    transition: max-height 0.5s ease-in-out;
 }
   
-  .card-content p {
-    font-size: 18px;
+.card-content p {
+    font-size: 18px;    
     margin-bottom: 10px;
-  }
+}
   
-  .back-btn {
+.back-btn {
     background: #00abf0;
     color: #081b29;
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
-  }
+}
   
-  .back-btn:hover {
+.back-btn:hover {
     background: #ededed;
     color: #00abf0;
-  }
+}
   
-  .card {
+.card {
     background: linear-gradient(90deg, #04375c, #002230);
     box-shadow: 20px 20px 60px #050c15, -20px -20px 60px #0c1a25;
     cursor: pointer;
     animation: fadeInUp 1s;
-  }
+}
 
-  .card {
+.card {
     animation: fadeInUp 1s;
 }
 
