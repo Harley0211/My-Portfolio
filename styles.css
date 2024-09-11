@@ -7,22 +7,38 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #081b29;
     color: #ededed;
 }
 
 .header{
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: linear-gradient(180deg, rgba(8, 27, 41, 0.5), rgba(8, 27, 41, 0.7));
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 1000;
+    backdrop-filter: blur (10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    
+}
+
+.home,
+.about,
+.services,
+.portfolio,
+.contact {
+    padding-top: 100px;
 }
 
 .logo{
@@ -66,13 +82,26 @@ body{
     display: flex;
     align-items: center;
     padding: 0 10%;
-    
-    
-
 }
+
+.about {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10%;
+  }
 
 .home-content{
     max-width: 600px;
+}
+
+.content-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+
 }
 
 .home-content h1{
@@ -80,6 +109,28 @@ body{
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
+}
+
+.about .content-inner{
+    display: flex;
+    flex-direction:column;
+    align-items: right;
+}
+
+.about .content-inner h1{
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ededed;
+    padding-bottom: 5px;
+}
+
+.about .content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.about .avatar-container{
+    margin-bottom:   50px;
 }
 
 .home-content h1::before{
@@ -271,12 +322,11 @@ body{
     width: 100%;
 }
 
-@keyframes showRight{
-    100%{
-        width: 0;
-    }
+.avatar-container{
+    padding: 10px;
 }
 
+<<<<<<< HEAD
 
 .about {
     position: relative; 
@@ -310,3 +360,133 @@ img {
    
 }
 }
+=======
+.avatar{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: block;     
+    margin: 0 auto;
+    
+
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+  
+.card {
+    background: #081b29;
+    color: #ededed;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    max-height: 200px;
+    transition: max-height 0.5s ease-in-out;
+    position: relative;
+}
+
+.card:hover {
+    max-height: 300px;
+}
+
+.card-header {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+  
+.card h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+  
+.expand-btn {
+    background: #00abf0;
+    color: #081b29;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+  
+.expand-btn:hover {
+    background: #ededed;
+    color: #00abf0;
+}
+  
+.card-content {
+    display: block;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 100px;
+}
+
+.card:hover .card-content {
+    max-height: 200px;
+    transition: max-height 0.5s ease-in-out;
+}
+  
+.card-content p {
+    font-size: 18px;    
+    margin-bottom: 10px;
+}
+  
+.back-btn {
+    background: #00abf0;
+    color: #081b29;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+  
+.back-btn:hover {
+    background: #ededed;
+    color: #00abf0;
+}
+  
+.card {
+    background: linear-gradient(90deg, #04375c, #002230);
+    box-shadow: 20px 20px 60px #050c15, -20px -20px 60px #0c1a25;
+    cursor: pointer;
+    animation: fadeInUp 1s;
+}
+
+.card {
+    animation: fadeInUp 1s;
+}
+
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes showRight{
+        100%{
+            width: 0;
+        }
+  }
+
+ 
+
+.Fade{
+    animation: 1s fadeInUp;
+}
+>>>>>>> 8a2abf8518c03f84c8fd14d5a682f2bd0c7db37b
