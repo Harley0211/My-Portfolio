@@ -326,41 +326,6 @@ body{
     padding: 10px;
 }
 
-<<<<<<< HEAD
-
-.about {
-    position: relative; 
-    height: 100vh; 
-    margin: 0; 
-}
-
-.content-inner {
-    position: absolute; 
-    top: 25%;
-    left: 25%;
-    padding: 10px; 
-}
-
-img {
-    border-radius: 50%;
-    width: 200px;
-    height: auto; 
-    position: absolute;
-}
-
-.image1 {
-    top: 0; 
-    left: 5vh; 
-}
-
-.image2 {
-    top: 0; 
-    left: 70vh; 
-.h2{
-   
-}
-}
-=======
 .avatar{
     border-radius: 50%;
     width: 200px;
@@ -489,4 +454,101 @@ img {
 .Fade{
     animation: 1s fadeInUp;
 }
->>>>>>> 8a2abf8518c03f84c8fd14d5a682f2bd0c7db37b
+ .contact{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popping', sans-serif;
+ }
+ .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    width: 100%;
+    background: transparent;
+ }
+
+ .contact-inner{
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    max-width: 1000px;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(25px);
+ }
+ .contact-inner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    transform: skewX(-15deg);
+ }
+ .contact h2{
+    width: 100%;
+    text-align: center;
+    color:#fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+ }
+ .contact .row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+ }
+ .contact .row100 .col{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 20px;
+ }
+ .contact .row100 .col .inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+ }
+ .contact .row100 .col .inputBox input,
+ .contact .row100 .col .inputBox textarea{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border:none;
+    outline: none;
+    font-size: 15px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #000;
+ }
+ .contact .row100 .col .inputBox .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;  
+ }
+ .contact .row100 .col .inputBox input:focus + .text,
+ .contact .row100 .col .inputBox textarea:focus + .text{
+    top: -35px;
+    left: -10px;
+    
+ }
