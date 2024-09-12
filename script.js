@@ -1,11 +1,17 @@
-const cards = document.querySelectorAll('.card');
+document.querySelector('.home-imgHover').addEventListener('mouseover', () => {
+  document.querySelector('.home-imgHover').classList.add('animate');
+});
 
-cards.forEach((card) => {
-  card.addEventListener('mouseover', () => {
-    card.classList.add('active');
+document.querySelector('.home-imgHover').addEventListener('mouseout', () => {
+  document.querySelector('.home-imgHover').classList.remove('animate');
+});
+
+document.querySelectorAll('.btn-box a').forEach((button) => {
+  button.addEventListener('mouseover', () => {
+      button.classList.add('animate');
   });
 
-  card.addEventListener('mouseout', () => {
-    card.classList.remove('active');
+  button.addEventListener('mouseout', () => {
+      button.classList.remove('animate');
   });
 });

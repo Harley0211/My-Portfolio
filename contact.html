@@ -3,82 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Harley</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <a href="index.html" class="logo">Harley</a>
-    
             <nav class="navbar">
-                <a href="index.html">Home</a>
-                <a href="about.html" >About</a>
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
                 <a href="services.html">Services</a>
                 <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html" class="active">Contact</a>
-    
+                <a href="contact.html">Contact</a>
             </nav>
         </header>
-        <section class="contact fade">
-            <div class="contact-inner"> 
-                <h2>Contact Us</h2> 
-                <form action="your_form_action_url" method="POST">
-                  <div class="row100">
-                      <div class="col">
-                          <div class="inputBox">
-                              <input type="text" name="first_name" required="required">
-                              <span class="text">First Name</span>
-                              <span class="line"></span>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="row100">
-                      <div class="col">
-                          <div class="inputBox">
-                              <input type="text" name="last_name" required="required">
-                              <span class="text">Last Name</span>
-                              <span class="line"></span>
-                          </div>    
-                      </div>
-                  </div>
-                  <div class="row100">
-                      <div class="col">
-                          <div class="inputBox">
-                              <input type="email" name="email" required="required">
-                              <span class="text">Email</span>
-                              <span class="line"></span>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="row100">
-                      <div class="col">
-                          <div class="inputBox">
-                              <input type="text" name="mobile" required="required">
-                              <span class="text">Mobile</span>
-                              <span class="line"></span>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="row100">
-                      <div class="col">
-                          <div class="inputBox textarea"> 
-                              <textarea name="message" required="required"></textarea>
-                              <span class="text">Type Your Message Here...</span>
-                              <span class="line"></span>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="row100">
-                      <div class="col">
-                          <input type="submit" value="Send">
-                      </div>
-                  </div>
-                </form>
-    </div>
+        <section class="home">
+            <div class="home-content">
+                <h1>Hi, I'm Harley Dave</h1>
+                <h3>Frontend Developer</h3>
+                <p>As a dedicated Front-End Developer, I specialize in creating visually appealing and user-friendly web interfaces. My expertise spans HTML, CSS, and JavaScript, allowing me to build responsive, interactive websites that offer seamless user experiences. With a strong focus on design and functionality, I am committed to delivering polished and accessible web applications that meet modern standards and exceed user expectations.</p>
+                <div class="btn-box">
+                    <a href="portfolio.html">Hire Me!</a>
+                    <a href="contact.html">Let's Talk</a>
+                </div>
+            </div>
+            <div class="home-sci">
+                <a href="https://www.facebook.com/dave.harlskie.02/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/valkery1102/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/valencia-harley-dave-93ab15286/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <span class="home-imgHover"></span>
         </section>
-    
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
