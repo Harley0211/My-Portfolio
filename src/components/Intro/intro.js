@@ -16,7 +16,7 @@ const Intro = () => {
         </span>
         <p class="introPara">
           I am an aspiring Full Stack Developer dedicated to bringing
-          professionalism and innovation to the digital world through efficient
+          professionalism and <br/>innovation to the digital world through efficient
           and user-focused solutions.{" "}
         </p>
         <Link>
